@@ -9,6 +9,13 @@ var (
 )
 
 func main() {
+
+	// estatica - tipagem das variaveis declaradas sao checadas em tempo de compilacao(declaracao explicita) - C, C#, Java , Go
+	// dinamica - tipagem das variaveis declaradas sao checadas em tempo de execucao(declaracao implicita) - Javascript, Python, PHP
+
+	//  tipagem forte - seguem regras estritas em tempo de compilacao - ex. não compilam, erro em operacao entre strings e inteiros
+	//  tipagem fraca - seguem regras estritas em tempo de compilacao - ex. compila sem erros  operacao entre strings e inteiros
+
 	// existem 3 formas de declarar variaveis - escopo da funcao
 
 	//// 1 - declaracao as variáveis e seus tipos explicitamente
@@ -17,6 +24,8 @@ func main() {
 	//nome = "gustavo"
 	//idade = 28
 	//fmt.Println(idade,nome)
+
+	// var  i, j, k int;
 
 	// 2 -  declaração com inicializacao inline
 	//var idade byte  = 28
@@ -28,6 +37,17 @@ func main() {
 	//idade := 28
 	//fmt.Printf("%v, %T \n", nome,nome)
 	//fmt.Printf("%v, %T \n", idade,idade)
+
+	//var a, b, c = 3, 4, "foo"
+	//
+	//fmt.Println(a)
+	//fmt.Println(b)
+	//fmt.Println(c)
+	//fmt.Printf("a is of type %T\n", a)
+	//fmt.Printf("b is of type %T\n", b)
+	//fmt.Printf("c is of type %T\n", c)
+
+
 
 	// 4 -  declaração nivel pacote
 	//fmt.Println(NomePacote,IdadePacote)
@@ -57,4 +77,15 @@ func main() {
 	//StringConversion := strconv.Itoa(o)
 	//fmt.Printf("%v, %T \n", StringConversion, StringConversion)
 
+
+
+	// lvalue − Expressions that refer to a memory location is called "lvalue" expression.
+	// An lvalue may appear as either the left-hand or right-hand side of an assignment.
+
+	// rvalue − The term rvalue refers to a data value that is stored at some address in memory.
+	// An rvalue is an expression that cannot have a value assigned to it which means an rvalue may appear on the right
+	// - but not left-hand side of an assignment.
+	// x = 20.0  valid
+	// 10 = 20.0  invalid
+	// 10 = 20.0  invalid
 }
