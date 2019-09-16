@@ -13,12 +13,14 @@ func main() {
 	// estatica - tipagem das variaveis declaradas sao checadas em tempo de compilacao(declaracao explicita) - C, C#, Java , Go
 	// dinamica - tipagem das variaveis declaradas sao checadas em tempo de execucao(declaracao implicita) - Javascript, Python, PHP
 
-	//  tipagem forte - seguem regras estritas em tempo de compilacao - ex. não compilam, erro em operacao entre strings e inteiros
-	//  tipagem fraca - seguem regras estritas em tempo de compilacao - ex. compila sem erros  operacao entre strings e inteiros
+	//  tipagem forte - seguem regras estritas em tempo de compilacao 
+	//  ex. não compilam, erro em operacao entre strings e inteiros
+	//  tipagem fraca - ex.: não seguem regras sintáticas estritas de operações aritméticas entre tipos na fase de compilacao 
+	//   ex. compila sem erros uma soma de strings e inteiros
 
-	// existem 3 formas de declarar variaveis - escopo da funcao
+	// existem 3 formas de se declarar variaveis 
 
-	//// 1 - declaracao as variáveis e seus tipos explicitamente
+	//// 1 - declaracao as variáveis e seus tipos explicitamente definidos
 	//var idade int
 	//var nome string
 	//nome = "gustavo"
@@ -28,13 +30,13 @@ func main() {
 	// var  i, j, k int;
 
 	// 2 -  declaração com inicializacao inline
-	//var idade byte  = 28
-	//var nome string =  "gustavo"
+	//var idade byte  = 11
+	//var nome string =  "bob"
 	//fmt.Println(idade,nome)
 
 	// 3 -  declaração com inferencia de tipo
-	//nome  :=  "gustavo"
-	//idade := 28
+	//nome  :=  "bob"
+	//idade := 11
 	//fmt.Printf("%v, %T \n", nome,nome)
 	//fmt.Printf("%v, %T \n", idade,idade)
 
