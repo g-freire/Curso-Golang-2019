@@ -58,6 +58,14 @@ func main() {
 	//fmt.Printf("strSlice \tLen: %v \tCap: %v\n", len(strSlice), cap(strSlice))
 	//fmt.Println(reflect.ValueOf(strSlice).Kind())
 
+	var strSlice = make([]string, 10, 20)
+	fmt.Printf("strSlice \tSlice: %v \tLen: %v \tCap: %v\n", strSlice, cap(strSlice),cap(strSlice))
+
+	var slicer = append(strSlice, "a", "b","a", "b","a", "b","a","a", "b","a","a", "b","a","a", "b","a","a", "b","a",)
+	fmt.Printf("strSlice \tSlice: %v \tLen: %v \tCap: %v\n", slicer, cap(slicer),cap(slicer))
+	
+	fmt.Printf("strSlice \tSlice: %v \tLen: %v \tCap: %v\n", strSlice, cap(strSlice),cap(strSlice))
+
 	// inicializacao new()
 	var intSlice = new([50]int)[0:10]
 	fmt.Println(reflect.ValueOf(intSlice).Kind())
